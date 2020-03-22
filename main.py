@@ -16,4 +16,5 @@ def saturs():
 def bilde():
     return render_template('bilde.html')
 
-app.run(host='0.0.0.0', port=8020)
+if __name__ == "__main__":
+    app.run()
