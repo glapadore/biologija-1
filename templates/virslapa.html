@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- https://www.html5webtemplates.co.uk/templates.html
+shadowplay_1 -->
+
+
+<html>
+
+<head>
+	<title>swag</title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/virslapa.css') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body>
+
+<div>
+		<div id="logo">
+			<div id="logo_text">
+				<!-- class="logo_colour", ,aina teksta krasu -->
+				<h1><a href="index.html">Zirnis<span class="logo_colour">!</span></a></h1>
+          <h2>Šeit atradīsiet visus vajadzīgos failus.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul>
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="{{url_for('home') }}" class="w3-button w3-bar-item">Home</li>
+
+          <li><a href="{{url_for('saturs')}}" class="w3-button w3-bar-item">Dati</a></li>
+
+          <li><a href="{{url_for('bilde')}}" class="w3-button w3-bar-item">Bildes</a></li>
+        
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+<!-- nav bar -->
+
+
+<section>
+  <h2 style="text-align: center">Bioloģijas darbs</h2>
+  <p  style="text-align: center"><i>Dati</i></p>
+  <p style="text-align: center">Šeit var atrast bildes un datus par labaratorijas darbu ko veicām 20. februārī. Sadaļā dati, jūs varēsiet atrast datus ko ieguvām veicot darbu, un sadaļā bildes atradīsiet attēlus ar zirņiem pēc darba.</p>
+</section>
+
+			</header>
+</body>
+
+</html>
+
+https://www.html5webtemplates.co.uk/templates.html

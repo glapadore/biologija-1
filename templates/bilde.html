@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Bildes</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/w3css/3/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body class="p-3 mb-2 bg-success text-white">
+
+	<nav class="w3-bar w3-black">
+		<a href="{{url_for('home') }}" class="w3-button w3-bar-item">Home</a>
+		<a href="{{url_for('saturs') }}" class="w3-button w3-bar-item">Dati</a>
+		<a href="{{url_for('bilde') }}" class="w3-button w3-bar-item">Bildes</a>
+	</nav>
+
+	<h1>Bildes<h1>
+
+
+
+
+			<div class="container">
+
+				<h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Zirņi</h1>
+
+				<hr class="mt-2 mb-5">
+
+				<div class="row text-center text-lg-left">
+
+					<div class="col-lg-3 col-md-4 col-6">
+						<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="{{url_for('static', filename='/bildes/11111.jpg')}}"  alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{url_for('static', filename='/bildes/22222.jpg')}}" 
+            alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{url_for('static', filename='/bildes/33333.jpg')}}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{url_for('static', filename='/bildes/44444.jpg')}}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{url_for('static', filename='/bildes/55555.jpg')}}" alt="">
+          </a>
+    </div>
+  </div>
+
+</div>
+
+
+
+</body>
+
+</html>
