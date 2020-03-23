@@ -7,40 +7,54 @@ shadowplay_1 -->
 
 <head>
 	<title>swag</title>
-<meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/virslapa.css') }}">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/virslapa.css') }}">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
+	 crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+	</script>
 
 
 </head>
 
 <body>
 
-<div>
-		<div id="logo">
-			<div id="logo_text">
-				<!-- class="logo_colour", ,aina teksta krasu -->
-				<h1><a href="index.html">Zirnis<span class="logo_colour">!</span></a></h1>
-          <h2>Šeit atradīsiet visus vajadzīgos failus.</h2>
-        </div>
-      </div>
-      <div id="menubar">
-        <ul>
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="selected"><a href="{{url_for('home') }}" class="w3-button w3-bar-item">Home</li>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark w-100 p-3">
+		<a class="navbar-brand" href="/">
+			<img src="https://i.imgur.com/RXSeaYA.jpg" width="50" height="50" class="d-inline-block align-left" alt="yo">
+  </a> 
 
-          <li><a href="{{url_for('saturs')}}" class="w3-button w3-bar-item">Dati</a></li>
-
-          <li><a href="{{url_for('bilde')}}" class="w3-button w3-bar-item">Bildes</a></li>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav">
+        <div class="dropdown show">
+          <a style="font-size: 17px;" class="nav-item nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Darbs ▼
+          </a>
         
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/saturs">Rezultāti</a>
+            <a class="dropdown-item" href="/bilde">Attēli</a>
+          </div>
+        </div>
+          <a href="/about" style="font-size: 17px" class="nav-item nav-link ">Kontakti</a>
+          <a href="/chat" style="font-size: 17px" class="nav-item nav-link">Čats</a>
+          <a href="/posts" style="font-size: 17px" class="nav-item nav-link">Raksti</a>
 
+
+      </div>
+          
+    </div> 
+</nav>
 <!-- nav bar -->
 
 
