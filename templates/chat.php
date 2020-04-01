@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Chat - Customer Module</title>
-<link type="text/css" rel="stylesheet" href="style.css" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/chat.css') }}">
 </head>
  
 <div id="wrapper">
