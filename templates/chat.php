@@ -162,10 +162,8 @@ $.ajax({
 }
 
 
-
-
-	//Load the file containing the chat log
-	function loadLog(){		
+//Load the file containing the chat log
+function loadLog(){		
 		var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20; //Scroll height before the request
 		$.ajax({
 			url: "log.html",
@@ -181,8 +179,6 @@ $.ajax({
 		  	},
 		});
 	}
-
-
 
 
 
