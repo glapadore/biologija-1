@@ -8,7 +8,7 @@
 <div id="wrapper">
     <div id="menu">
         <p class="welcome">Welcome, <b></b></p>
-        <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+        <p class="logout"><a id="exit" href="/">Exit Chat</a></p>
         <div style="clear:both"></div>
     </div>
      
