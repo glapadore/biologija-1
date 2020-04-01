@@ -16,5 +16,10 @@ def saturs():
 def bilde():
     return render_template('bilde.html')
 
+@app.route('/chat')
+def chat():
+    return render_template('index.php')
+
 if __name__ == "__main__":
-    app.run()
+   app.run()
+

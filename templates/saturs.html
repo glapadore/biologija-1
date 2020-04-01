@@ -3,7 +3,6 @@
 
 <head>
 	<title>lapa2</title>
-
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/saturs.css') }}">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	 crossorigin="anonymous">
@@ -11,15 +10,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/w3css/3/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+	</script>
+
 </head>
 
-<body class="p-3 mb-2 bg-success text-white">
+<body>
 
-	<nav class="w3-bar w3-black">
-		<a href="{{url_for('home') }}" class="w3-button w3-bar-item">Home</a>
-		<a href="{{url_for('saturs') }}" class="w3-button w3-bar-item">Dati</a>
-		<a href="{{url_for('bilde') }}" class="w3-button w3-bar-item">Bildes</a>
-	</nav>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark w-100 p-3">
+		<a class="navbar-brand" href="/">
+			<img src="https://i.imgur.com/RXSeaYA.jpg" width="50" height="50" class="d-inline-block align-left" alt="yo">
+  </a> 
+
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav">
+        <div class="dropdown show">
+          <a style="font-size: 17px;" class="nav-item nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Darbs ▼
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/saturs">Rezultāti</a>
+            <a class="dropdown-item" href="/bilde">Attēli</a>
+          </div>
+        </div>
+          <a href="/about" style="font-size: 17px" class="nav-item nav-link ">Kontakti</a>
+          <a href="/chat" style="font-size: 17px" class="nav-item nav-link">Čats</a>
+          <a href="/posts" style="font-size: 17px" class="nav-item nav-link">Raksti</a>
+
+
+      </div>
+          
+    </div> 
+</nav>
 
 	<h1 style="color: black; text-align: center; font-size: 20px;">Saturs<h1>
 			<header>
