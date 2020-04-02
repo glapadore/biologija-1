@@ -32,7 +32,7 @@ $(document).ready(function(){
 session_start();
  
 function loginForm(){
-    echo'
+    echo
     <div id="loginform">
     <form action="chat.php" method="post">
         <p>Please enter your name to continue:</p>
@@ -41,7 +41,7 @@ function loginForm(){
         <input type="submit" name="enter" id="enter" value="Enter" />
     </form>
     </div>
-    ';
+    
 }
  
 if(isset($_POST['enter'])){
