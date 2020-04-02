@@ -28,7 +28,7 @@
 $(document).ready(function(){
  
 });
-<?
+
 session_start();
  
 function loginForm(){
@@ -52,7 +52,7 @@ if(isset($_POST['enter'])){
         echo '<span class="error">Please type in a name</span>';
     }
 }
-?>
+
 
 
 
