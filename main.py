@@ -1,6 +1,7 @@
-import pusher
 from flask import Flask, render_template, jsonify, request
 app = Flask(__name__)
+
+import pusher
 
 pusher_client = pusher.Pusher(
   app_id='998247',
@@ -9,9 +10,8 @@ pusher_client = pusher.Pusher(
   cluster='eu',
   ssl=True
 )
-@app.route('/chat')
-def chat():
-    return render_template('chat.html')
+
+pusher_client.trigger('my-channel', 'my-event', {'message': 'hello world'})
 
 #------------- 
 
