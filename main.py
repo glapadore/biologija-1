@@ -11,7 +11,6 @@ pusher_client = pusher.Pusher(
 )
 @app.route('/chat')
 def chat():
-    pusher_client.trigger('my-channel', 'my-event', {'message': 'hello world'})
     return render_template('chat.html')
 
 
