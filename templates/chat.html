@@ -8,6 +8,37 @@
 
 <body style="overflow-y:hidden;" class="has-navbar-fixed-bottom">
 
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark w-100 p-3">
+        <a href="/">
+          <img src="{{ url_for('static', filename='bildes/pickel.png') }}" width="70" height="47" alt="">
+        </a> 
+    
+    <!--     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+          
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <div class="dropdown show">
+              <a style="font-size: 17px;" class="nav-item nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Darbs ▼
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="/saturs">Rezultāti</a>
+                <a class="dropdown-item" href="/bilde">Attēli</a>
+              </div>
+            </div>
+              <a href="/about" style="font-size: 17px" class="nav-item nav-link ">Kontakti</a>
+              <a href="/chat" style="font-size: 17px" class="nav-item nav-link">Čats</a>
+              <a href="/posts" style="font-size: 17px" class="nav-item nav-link">Raksti</a>
+    
+    
+          </div>
+              
+        </div> 
+    </nav>
+    
   <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-item is-expanded">
@@ -237,7 +268,23 @@
   </div>
 
 
-  
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input class="input" type="text" placeholder="Choose a username">
+        </div>
+        <div class="control">
+          <a class="button is-info">
+            Start Chatting
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 
