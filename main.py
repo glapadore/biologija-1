@@ -18,8 +18,9 @@ def bilde():
 
 @app.route('/chat')
 def chat():
-    return render_template('chat.php')
+    return render_template('chat.html')
 
-if __name__ == "__main__":
-   app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
+
 
