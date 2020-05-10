@@ -18,6 +18,9 @@ def saturs():
 def bilde():
     return render_template('bilde.html')
 
+@app.route('/cats.html')
+def cats():
+    return render_template('cats.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
