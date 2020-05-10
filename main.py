@@ -1,17 +1,7 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template
+
 app = Flask(__name__)
 
-import pusher
-
-pusher_client = pusher.Pusher(
-  app_id='998247',
-  key='5f0e6caa364c3b0742a0',
-  secret='df2bba74bcab836741be',
-  cluster='eu',
-  ssl=True
-)
-
-pusher_client.trigger('my-channel', 'my-event', {'message': 'hello world'})
 
 #------------- 
 
