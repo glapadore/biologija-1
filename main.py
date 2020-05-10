@@ -18,7 +18,7 @@ def saturs():
 def bilde():
     return render_template('bilde.html')
 
-@app.route('/cats.html')
+@app.route('/cats')
 def cats():
     return render_template('cats.html')
 
