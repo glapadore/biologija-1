@@ -16,7 +16,7 @@ class Chats {
     // pārbaudām vai ir vispār kāda jau esoša ziņa
     // ja nav, parādām paziņojumu (tikai lokāli!)
     if (dati.chats.length == 0) {
-      this.zinjas = [new Zinja("Pārlūkprogramma", "Čatā pašlaik ziņu nav, uzrakstiet kaut ko!")];
+      this.zinjas = [new Zinja("Pārlūkprogramma", "Čatā ziņu nav, uzraksti kaut ko!")];
     }
 
     // no atsūtītajiem datiem izveidojam masīvu ar zinju objektiem
