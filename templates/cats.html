@@ -6,47 +6,43 @@
     <meta name="viewport" content="width=device-width">
     <title>StartIT chats</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="{{ url_for('static', filename='stils.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='css/stils.css') }}" rel="stylesheet" type="text/css" />
     
 </head>
 
 <body onload="lasiChatu();" class="body">
-    
-    <!-- {% block saturs %} -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark w-100 p-3">
+    <a href="/">
+      <img src="{{ url_for('static', filename='bildes/pickel.png') }}" width="70" height="47" alt="">
+    </a> 
 
-    <div class="container bootstrap">
-        <div class="row info-box">
-          <div class="col-md-6">
-            <h2>⌘ StartIT tērzētava</h2>
+<!--     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+      
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav">
+        <div class="dropdown show">
+          <a style="font-size: 17px;" class="nav-item nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Darbs ▼
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/saturs">Rezultāti</a>
+            <a class="dropdown-item" href="/bilde">Attēli</a>
           </div>
-          <div class="col-md-6">
-            <p id="versija"></p>
-          </div>
         </div>
-        <div class="row">
-          <!-- selected chat -->
-          <div class="col-md-12">
-            <div class="chat-message">
-              <ul class="chat" id="chats">
-                  <li class="left clearfix">
-                  </li>                   
-              </ul>
-            </div>           
-              </div>
-        </div>
-        <div class="row">
-          <div class="chat-box">
-            <div class="input-group">
-              <input id="zinja" class="form-control border no-shadow no-rounded" placeholder="Rakstiet savu ziņu un spiediet Enter vai Sūtīt" type="text">
-              <span class="input-group-btn">
-                <button onClick="suutiZinju();" class="btn btn-success no-rounded" type="button">Sūtīt</button>
-              </span>
-            </div><!-- /input-group -->	
-          </div> 
-        </div>
+          <a href="/about" style="font-size: 17px" class="nav-item nav-link ">Kontakti</a>
+          <a href="/chats" style="font-size: 17px" class="nav-item nav-link">Čats</a>
+          <a href="/posts" style="font-size: 17px" class="nav-item nav-link">Raksti</a>
+
+
       </div>
-    
-    <!--   {% endblock %}   -->
+          
+    </div> 
+</nav>
+  {% block saturs %}
+  {% endblock %}
 
     <script src="{{ url_for('static', filename='chats.js') }}"></script>
 </body>

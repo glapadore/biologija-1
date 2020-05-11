@@ -168,9 +168,7 @@ function paradiPalidzibu() {
 }
 
 
-// Ērtības funkcionalitāte
-var versijasLauks = document.getElementById("versija");
-versijasLauks.innerHTML = "JS versija: " + VERSIJA;
+
 // Atrod ievades lauku
 var ievadesLauks = document.getElementById("zinja");
 // Gaida signālu no klaviatūras, ka ir nospiests Enter taustiņš
